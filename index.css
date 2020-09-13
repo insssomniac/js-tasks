@@ -1,0 +1,156 @@
+body, html {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  font-size: 34px;
+  text-align: center;
+}
+
+.slider-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider {
+  display: flex;
+  width: 300px;
+  overflow: hidden;
+  margin: 0 10px;
+}
+
+.slider__items {
+  display: flex;
+  position: relative;
+  color: #444;
+  font-size: 30px;
+  will-change: right;
+  transition: right .1s;
+  padding: 0;
+  right: 0;
+}
+
+.slider__item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffefd5;
+  box-sizing: border-box;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #444;
+}
+
+.arrow {
+  text-decoration: none;
+}
+
+.arrow:hover {
+  color: #ff6163;
+}
+
+.text {
+  max-width: 900px;
+  margin-bottom: 50px;
+}
+
+/*modal styles*/
+
+.modal__button {
+  display: flex;
+  justify-content: center;
+}
+
+.btn {
+  background: #a492e6;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 10px 18px;
+  outline: none;
+}
+
+.btn:hover {
+  opacity: .8;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(00, 00, 00, .2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal__container {
+  width: 400px;
+  background: #444;
+  border-radius: 5px;
+  padding: 10px;
+  color: #fff;
+  margin: 0;
+  position: relative;
+}
+
+.close {
+  color: #fff;
+  position: absolute;
+  right: -5px;
+  top: -10px;
+  background: #d00;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+
+}
+
+.close:hover {
+  background: #d33;
+}
+
+/*working with DOM styles*/
+
+.dom__controls {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dom__amount-selector {
+  margin-right: 10px;
+}
+
+.dom__blocks {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.dom__item {
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  border: 1px solid #000;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}

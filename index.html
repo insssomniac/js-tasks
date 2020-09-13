@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+<div class="container">
+
+  <h1 class="title">Simple Slider</h1>
+  <div class="slider-container">
+    <a id="left" href="#" class="arrow">←</a>
+    <div class="slider">
+      <ul class="slider__items" id="items">
+        <li class="slider__item">1</li>
+        <li class="slider__item">2</li>
+        <li class="slider__item">3</li>
+        <li class="slider__item">4</li>
+        <li class="slider__item">5</li>
+        <li class="slider__item">6</li>
+        <li class="slider__item">7</li>
+        <li class="slider__item">8</li>
+        <li class="slider__item">9</li>
+        <li class="slider__item">10</li>
+      </ul>
+    </div>
+    <a id="right" href="#" class="arrow">→</a>
+  </div>
+
+  <div class="modal">
+    <h1 class="title">Modal</h1>
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias animi aspernatur consequatur
+      deleniti doloribus
+      eius eligendi, enim, esse excepturi fugit laborum libero necessitatibus obcaecati, provident quaerat quia
+      quibusdam reiciendis saepe sequi suscipit tempora ut vel velit vero voluptas! Accusamus deserunt dolore dolorem
+      ducimus explicabo inventore odit quasi quibusdam quidem unde?
+    </div>
+    <div class="modal__button">
+      <button class="btn" id="openOverlay">Open Modal</button>
+    </div>
+  </div>
+
+  <div class="dom">
+    <h1 class="title">Working with DOM</h1>
+    <div class="dom__controls">
+      <input type="number" min="0" class="dom__amount-selector">
+      <input type="color" class="dom__color-selector">
+    </div>
+    <div class="dom__blocks">
+    </div>
+  </div>
+</div>
+
+
+</body>
+<script src="slider.js"></script>
+<script src="modal.js"></script>
+<script src="dom-elements.js"></script>
+</html>
